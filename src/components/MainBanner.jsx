@@ -2,6 +2,7 @@ import { Plus } from "lucide-react";
 import React from "react";
 import PrimaryButton from "./buttons/PrimaryButton";
 import SecondaryButton from "./buttons/SecondaryButton";
+import { StarFilledIcon } from "@radix-ui/react-icons";
 
 export default function MainBanner() {
   return (
@@ -19,9 +20,24 @@ export default function MainBanner() {
             <PrimaryButton>Call Us</PrimaryButton>
             <SecondaryButton>Whatsapp Us</SecondaryButton>
           </div>
+          <div className="flex items-center gap-0 5">
+            <StarFilledIcon className="text-primary2" />
+            <StarFilledIcon className="text-primary2" />
+            <StarFilledIcon className="text-primary2" />
+            <StarFilledIcon className="text-primary2" />
+            <StarFilledIcon className="text-primary2/50" />
+          </div>
+          <div className="flex flex-col gap-2">
+            <span className="text-lg font-bold">
+              "These guys give the best repair services in town"
+            </span>
+            <span className="text-lg text-black/40 font-bold">
+              - John Doe, EarthCo Inc.
+            </span>
+          </div>
         </div>
-        <div className="flex w-full h-fit items-center justify-center">
-          <div className="relative max-w-[600px] w-full h-full">
+        <div className="flex items-center justify-center w-full">
+          <div className="relative w-[300px] h-[300px] sm:w-[500px] sm:h-[420px]">
             <BlobBG />
             <BlobImage imgUrl="/repair.webp" />
             <div className="absolute right-0 top-[10px]">
@@ -37,7 +53,7 @@ export default function MainBanner() {
         </div>
       </div>
       <div
-        className="absolute -z-10 w-24 h-32 bg-blob bottom-0 left-0"
+        className="absolute -z-10 w-24 h-32 bg-blob top-[520px] left-0"
         style={{
           borderRadius: "0% 100% 100% 0% / 100% 32% 68% 0%",
         }}
@@ -48,7 +64,7 @@ export default function MainBanner() {
 const BlobImage = ({ imgUrl }) => {
   return (
     <div
-      className="w-full absolute aspect-[1.2/1] bg-red-200"
+      className="w-full absolute aspect-[1.2/1]"
       style={{
         borderRadius: "13% 87% 59% 41% / 19% 33% 67% 81%",
         background: `url(${imgUrl})`,

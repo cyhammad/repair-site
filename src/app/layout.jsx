@@ -1,6 +1,7 @@
 import { Lato } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 const font = Lato({
   subsets: ["latin"],
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body className={`${font.className} antialiased text-secondary flex flex-col`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
