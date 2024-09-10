@@ -13,7 +13,7 @@ export default function NavlinkDropdown({ href, title }) {
       className={cn(
         "w-full border-l-4 rounded-none",
         isActive
-          ? "border-primary2 text-primary2 font-bold"
+          ? "border-primary text-primary font-bold"
           : "border-transparent"
       )}
     >

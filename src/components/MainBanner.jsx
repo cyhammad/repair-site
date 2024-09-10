@@ -7,7 +7,7 @@ import { StarFilledIcon } from "@radix-ui/react-icons";
 export default function MainBanner() {
   return (
     <div className="flex items-center justify-center w-full relative">
-      <div className="grid md:grid-cols-2 mt-[100px] px-5 w-full max-w-7xl md:text-start text-center md:min-h-[75vh]">
+      <div className="grid md:grid-cols-2 px-5 w-full max-w-7xl md:text-start text-center md:min-h-[75vh]">
         <div className="flex flex-col py-10 h-full items-center md:items-start mb-10 md:max-w-[80%] gap-6">
           <h1 className="text-5xl font-black">
             Whether it's your washing machine or your fridge...
@@ -21,11 +21,11 @@ export default function MainBanner() {
             <SecondaryButton>Whatsapp Us</SecondaryButton>
           </div>
           <div className="flex items-center gap-0 5">
-            <StarFilledIcon className="text-primary2" />
-            <StarFilledIcon className="text-primary2" />
-            <StarFilledIcon className="text-primary2" />
-            <StarFilledIcon className="text-primary2" />
-            <StarFilledIcon className="text-primary2/50" />
+            <StarFilledIcon className="text-primary" />
+            <StarFilledIcon className="text-primary" />
+            <StarFilledIcon className="text-primary" />
+            <StarFilledIcon className="text-primary" />
+            <StarFilledIcon className="text-primary/50" />
           </div>
           <div className="flex flex-col gap-2">
             <span className="text-lg font-bold">
@@ -41,13 +41,13 @@ export default function MainBanner() {
             <BlobBG />
             <BlobImage imgUrl="/repair.webp" />
             <div className="absolute right-0 top-[10px]">
-              <Plus size={24} className="text-primary2" />
+              <Plus size={24} className="text-primary" />
             </div>
             <div className="absolute right-[60px] -top-[20px]">
-              <Plus size={24} className="text-primary2" />
+              <Plus size={24} className="text-primary" />
             </div>
             <div className="absolute right-[42px] top-[20px]">
-              <Plus size={24} className="text-primary2" />
+              <Plus size={24} className="text-primary" />
             </div>
           </div>
         </div>

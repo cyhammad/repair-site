@@ -1,15 +1,20 @@
 import AboutSection from "@/components/AboutSection";
+import CompaniesStrip from "@/components/CompaniesStrip";
+import { ImagesSlider } from "@/components/ImagesSlider";
 import MainBanner from "@/components/MainBanner";
 import OneCallSection from "@/components/OneCallSection";
 import OurFeatures from "@/components/OurFeatures";
 import ReviewSection from "@/components/ReviewSection";
 import { ServicesSection } from "@/components/ServicesSection";
+import { SliderBanner } from "@/components/SliderBanner";
 
 export default function Home() {
   return (
     <>
-      <MainBanner />
+      <SliderBanner />
+      <CompaniesStrip />
       <OurFeatures />
+      {/* <MainBanner /> */}
       <AboutSection />
       <OneCallSection />
       <div className="flex items-center flex-col gap-10 py-20 justify-center w-full">

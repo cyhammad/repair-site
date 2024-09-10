@@ -13,13 +13,13 @@ export default function AboutSection() {
             <BlobBG />
             <BlobImage imgUrl="/repair.webp" />
             <div className="absolute right-0 top-[10px]">
-              <Plus size={24} className="text-primary2" />
+              <Plus size={24} className="text-primary" />
             </div>
             <div className="absolute right-[60px] -top-[20px]">
-              <Plus size={24} className="text-primary2" />
+              <Plus size={24} className="text-primary" />
             </div>
             <div className="absolute right-[42px] top-[20px]">
-              <Plus size={24} className="text-primary2" />
+              <Plus size={24} className="text-primary" />
             </div>
           </div>
         </div>

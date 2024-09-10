@@ -14,10 +14,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#F3B63F",
-        primary2: "#F0B33C",
-        secondary: "#1F242E",
-        blob: "#FCF0D6",
+        primary: "#35A4DC",
+        secondary: "#17497C",
+        blob: "#F0F4F9",
       },
       borderRadius: {
         lg: "var(--radius)",
