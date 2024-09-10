@@ -1,17 +1,28 @@
+"use client";
+
 import { Plus } from "lucide-react";
-import React from "react";
 import PrimaryButton from "./buttons/PrimaryButton";
 import SecondaryButton from "./buttons/SecondaryButton";
-import { StarFilledIcon } from "@radix-ui/react-icons";
+import { motion } from "framer-motion";
+import { leftToRightVariants, rightToLeftVariants } from "@/lib/variants";
 
 export default function AboutSection() {
   return (
-    <div className="flex items-center justify-center w-full relative">
+    <div
+      className="flex items-center justify-center w-full relative"
+      id="about"
+    >
       <div className="grid md:grid-cols-2 mt-[100px] px-5 w-full max-w-7xl md:text-start text-center md:min-h-[75vh]">
-        <div className="flex items-center justify-center md:justify-start w-full">
+        <motion.div
+          initial="hide"
+          whileInView="show"
+          exit="show"
+          variants={leftToRightVariants}
+          className="flex items-center justify-center md:justify-start w-full"
+        >
           <div className="relative w-[300px] h-[300px] sm:w-[500px] sm:h-[420px]">
             <BlobBG />
-            <BlobImage imgUrl="/repair.webp" />
+            <BlobImage imgUrl="/washing-machine-repair.jpg" />
             <div className="absolute right-0 top-[10px]">
               <Plus size={24} className="text-primary" />
             </div>
@@ -22,15 +33,22 @@ export default function AboutSection() {
               <Plus size={24} className="text-primary" />
             </div>
           </div>
-        </div>
-        <div className="flex flex-col py-10 h-full items-center md:items-start mb-10 md:max-w-[80%] gap-6">
+        </motion.div>
+        <motion.div
+          initial="hide"
+          whileInView="show"
+          exit="show"
+          variants={rightToLeftVariants}
+          className="flex flex-col py-10 h-full items-center md:items-start mb-10 md:max-w-[80%] gap-6"
+        >
           <h1 className="text-5xl font-black">About Us</h1>
           <span className="text-xl font-bold">Here is our mission</span>
           <span className="text-lg font-medium">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga
-            quas inventore ut? Obcaecati dolorum nesciunt explicabo rerum
-            corporis quis distinctio in dignissimos doloremque voluptates
-            voluptas tempora quos, ullam, impedit unde vitae!
+            We are a team of professional technicians who specialize in
+            repairing home appliances. We are dedicated to providing you with
+            the best service possible. Our goal is to make sure that your
+            appliances are working as efficiently as possible so that you can
+            get back to your daily routine.
           </span>
           <div className="flex flex-col gap-2">
             <span className="text-lg text-black/40 font-bold">
@@ -41,7 +59,7 @@ export default function AboutSection() {
               <SecondaryButton>Whatsapp Us</SecondaryButton>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

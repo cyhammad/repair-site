@@ -1,11 +1,29 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { leftToRightVariants, rightToLeftVariants } from "@/lib/variants";
 
 export default function OurFeatures() {
   return (
     <div className="flex items-center justify-center py-10 w-full">
       <div className="flex flex-col max-w-7xl gap-10 px-5 items-center">
-        <h1 className="text-5xl font-black">Our Features</h1>
-        <div className="grid md:grid-cols-3 gap-10 p-10">
+        <motion.h1
+          initial="hide"
+          whileInView="show"
+          exit="show"
+          variants={leftToRightVariants}
+          className="text-5xl font-black"
+        >
+          Our Features
+        </motion.h1>
+        <motion.div
+          initial="hide"
+          whileInView="show"
+          exit="show"
+          variants={rightToLeftVariants}
+          className="grid md:grid-cols-3 gap-10 p-10"
+        >
           <div className="flex flex-col gap-3 px-10 items-center justify-center text-center">
             <Image
               src="/feature1.svg"
@@ -45,7 +63,7 @@ export default function OurFeatures() {
               dicta recusandae odit at fugiat?
             </span>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

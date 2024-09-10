@@ -12,11 +12,11 @@ export default function HeaderDropdown() {
       <DropdownMenuTrigger>
         <Menu size={24} />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-[96vw] flex flex-col gap-0.5 p-0 rounded-[4px] mx-[2vw] mt-3">
+      <DropdownMenuContent className="w-screen flex flex-col gap-0.5 p-0 rounded-none mt-3">
         <NavlinkDropdown href="/" title="Home" />
-        <NavlinkDropdown href="/about" title="About" />
-        <NavlinkDropdown href="/services" title="Services" />
-        <NavlinkDropdown href="/contact" title="Contact" />
+        <NavlinkDropdown href="/#about" title="About" />
+        <NavlinkDropdown href="/#services" title="Services" />
+        <NavlinkDropdown href="/#contact" title="Contact" />
       </DropdownMenuContent>
     </DropdownMenu>
   );

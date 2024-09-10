@@ -14,11 +14,30 @@ export default function ReviewSection({
 
   const items = [
     {
-        name: "John Doe",
-        quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. In quidem optio perferendis nobis ut expedita ipsa deleniti, minima unde, temporibus, quia porro iure explicabo et sed.",
-        title: "CEO",
-    }
-  ]
+      name: "Dawood Ayoob",
+      quote:
+        "The best company I have ever worked with. Their team is very professional and always ready to help. I will definitely recommend them to my friends and family.",
+      title: "TBR Company",
+    },
+    {
+      name: "Ayesha Ali",
+      quote:
+        "I am very happy with the services provided by this company. They are very professional and always ready to help. I will definitely recommend them to my friends and family.",
+      title: "MOB Mobile Company",
+    },
+    {
+      name: "Ali Raza",
+      quote:
+        "To be honest, I was a bit skeptical at first but after working with them, I can say that they are the best in the business. I will definitely recommend them to my friends and family.",
+      title: "TV Pro Company",
+    },
+    {
+      name: "Sara Khan",
+      quote:
+        "I am very happy with the services provided by this company. They are very professional and always ready to help. I will definitely recommend them to my friends and family.",
+      title: "Blue Company",
+    },
+  ];
 
   useEffect(() => {
     addAnimation();
@@ -84,10 +103,9 @@ export default function ReviewSection({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
+            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-secondary px-8 py-6 md:w-[450px]"
             style={{
-              background:
-                "linear-gradient(180deg, var(--primary), var(--secondary)",
+              background: "var(--secondary)",
             }}
             key={item.name}
           >
@@ -96,15 +114,15 @@ export default function ReviewSection({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
+              <span className=" relative z-20 text-sm leading-[1.6] text-white font-normal">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                  <span className=" text-sm leading-[1.6] text-white font-bold">
                     {item.name}
                   </span>
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                  <span className=" text-sm leading-[1.6] text-white font-bold">
                     {item.title}
                   </span>
                 </span>

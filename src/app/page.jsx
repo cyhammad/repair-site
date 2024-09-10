@@ -17,7 +17,7 @@ export default function Home() {
       {/* <MainBanner /> */}
       <AboutSection />
       <OneCallSection />
-      <div className="flex items-center flex-col gap-10 py-20 justify-center w-full">
+      <div className="flex items-center flex-col gap-10 py-20 justify-center w-full" id="services">
         <h1 className="text-5xl font-black">Our Services</h1>
         <ServicesSection />
       </div>

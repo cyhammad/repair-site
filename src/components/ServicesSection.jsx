@@ -134,7 +134,7 @@ export function ServicesSection() {
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col  hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-4 flex flex-col  hover:bg-primary/15 bg-blob rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col  w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
@@ -205,15 +205,17 @@ const cards = [
   {
     description: "Washing Machine Repair",
     title: "#1",
-    src: "/repair.webp",
+    src: "/washing-machine-repair-2.jpg",
     ctaText: "Hire Us",
     ctaLink: "tel:+1234567890",
     content: () => {
       return (
         <div className="flex flex-col gap-4">
           <p>
-            Lana Del Rey, an iconic American singer-songwriter, is celebrated
-            for her melancholic and cinematic music style.
+            Common problems with washing machines include leaks, the machine not
+            starting, or the machine not spinning. We provide a same-day
+            service, so you can get your washing machine back up and running in
+            no time.
           </p>
           <div className="flex items-center gap-3">
             <PrimaryButton>Call Us</PrimaryButton>
@@ -226,15 +228,16 @@ const cards = [
   {
     description: "Dryer Repair",
     title: "#2",
-    src: "/repair.webp",
+    src: "/dryer-repair.webp",
     ctaText: "Hire Us",
     ctaLink: "tel:+1234567890",
     content: () => {
       return (
         <div className="flex flex-col gap-4">
           <p>
-            Lana Del Rey, an iconic American singer-songwriter, is celebrated
-            for her melancholic and cinematic music style.
+            Common problems with dryers include the dryer not spinning, or the
+            dryer not starting. We provide a same-day service, so you can get
+            your dryer back up and running in no time.
           </p>
           <div className="flex items-center gap-3">
             <PrimaryButton>Call Us</PrimaryButton>
@@ -247,15 +250,17 @@ const cards = [
   {
     description: "Stove / Cooker Repair",
     title: "#3",
-    src: "/repair.webp",
+    src: "/stove-repair.webp",
     ctaText: "Hire Us",
     ctaLink: "tel:+1234567890",
     content: () => {
       return (
         <div className="flex flex-col gap-4">
           <p>
-            Lana Del Rey, an iconic American singer-songwriter, is celebrated
-            for her melancholic and cinematic music style.
+            Common issues with stoves include the stove not heating, the stove
+            not turning on, or the stove not cooking evenly. We provide a
+            same-day service, so you can get your stove back up and running in
+            no time.
           </p>
           <div className="flex items-center gap-3">
             <PrimaryButton>Call Us</PrimaryButton>
@@ -268,15 +273,17 @@ const cards = [
   {
     description: "Dishwasher Repair",
     title: "#4",
-    src: "/repair.webp",
+    src: "/dishwasher-repair.jpg",
     ctaText: "Hire Us",
     ctaLink: "tel:+1234567890",
     content: () => {
       return (
         <div className="flex flex-col gap-4">
           <p>
-            Lana Del Rey, an iconic American singer-songwriter, is celebrated
-            for her melancholic and cinematic music style.
+            Common problems with dishwashers include the dishwasher not
+            draining, the dishwasher not cleaning dishes properly, or the
+            dishwasher not starting. We provide a same-day service, so you can
+            get your dishwasher back up and running in no time.
           </p>
           <div className="flex items-center gap-3">
             <PrimaryButton>Call Us</PrimaryButton>
@@ -289,15 +296,17 @@ const cards = [
   {
     description: "Refridgerator Repair",
     title: "#5",
-    src: "/repair.webp",
+    src: "/fridge-repair.webp",
     ctaText: "Hire Us",
     ctaLink: "tel:+1234567890",
     content: () => {
       return (
         <div className="flex flex-col gap-4">
           <p>
-            Lana Del Rey, an iconic American singer-songwriter, is celebrated
-            for her melancholic and cinematic music style.
+            Issues with refrigerators include the refrigerator not cooling, the
+            refrigerator making strange noises, or the refrigerator not
+            dispensing water. We provide a same-day service, so you can get your
+            refrigerator back up and running in no time.
           </p>
           <div className="flex items-center gap-3">
             <PrimaryButton>Call Us</PrimaryButton>
@@ -310,15 +319,17 @@ const cards = [
   {
     description: "Television Repair",
     title: "#6",
-    src: "/repair.webp",
+    src: "/tv-repair.jpg",
     ctaText: "Hire Us",
     ctaLink: "tel:+1234567890",
     content: () => {
       return (
         <div className="flex flex-col gap-4">
           <p>
-            Lana Del Rey, an iconic American singer-songwriter, is celebrated
-            for her melancholic and cinematic music style.
+            Problems with televisions include the television not turning on, the
+            television not displaying an image, or the television not connecting
+            to the internet. We provide a same-day service, so you can get your
+            television back up and running in no time.
           </p>
           <div className="flex items-center gap-3">
             <PrimaryButton>Call Us</PrimaryButton>
@@ -331,15 +342,17 @@ const cards = [
   {
     description: "Gas Oven Repair",
     title: "#7",
-    src: "/repair.webp",
+    src: "/oven-repair.webp",
     ctaText: "Hire Us",
     ctaLink: "tel:+1234567890",
     content: () => {
       return (
         <div className="flex flex-col gap-4">
           <p>
-            Lana Del Rey, an iconic American singer-songwriter, is celebrated
-            for her melancholic and cinematic music style.
+            Common issues with gas ovens include the oven not heating, the oven
+            not turning on, or the oven not cooking evenly. We provide a
+            same-day service, so you can get your oven back up and running in no
+            time.
           </p>
           <div className="flex items-center gap-3">
             <PrimaryButton>Call Us</PrimaryButton>
