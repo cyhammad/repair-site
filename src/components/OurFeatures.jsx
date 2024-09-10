@@ -6,7 +6,7 @@ import { leftToRightVariants, rightToLeftVariants } from "@/lib/variants";
 
 export default function OurFeatures() {
   return (
-    <div className="flex items-center justify-center py-10 w-full">
+    <div className="flex items-center justify-center py-10 w-full max-w-screen overflow-hidden">
       <div className="flex flex-col max-w-7xl gap-10 px-5 items-center">
         <motion.h1
           initial="hide"

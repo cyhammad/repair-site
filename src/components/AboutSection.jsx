@@ -9,7 +9,7 @@ import { leftToRightVariants, rightToLeftVariants } from "@/lib/variants";
 export default function AboutSection() {
   return (
     <div
-      className="flex items-center justify-center w-full relative"
+      className="flex items-center justify-center w-full relative max-w-screen overflow-hidden"
       id="about"
     >
       <div className="grid md:grid-cols-2 mt-[100px] px-5 w-full max-w-7xl md:text-start text-center md:min-h-[75vh]">

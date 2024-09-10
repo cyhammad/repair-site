@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function CompaniesStrip() {
   return (
-    <div className="py-10 w-full flex items-center justify-center bg-primary">
+    <div className="py-10 w-full flex items-center justify-center bg-primary max-w-screen overflow-hidden">
       <motion.div
         initial={{
           opacity: 0,

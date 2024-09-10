@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function OneCallSection() {
   return (
     <div
-      className="flex items-center justify-center w-full flex-col px-5"
+      className="flex items-center justify-center w-full flex-col px-5 max-w-screen overflow-hidden"
       id="contact"
     >
       <div className="max-w-7xl w-full px-10 py-20 rounded-2xl bg-blob flex flex-col gap-5 items-center justify-center text-center">

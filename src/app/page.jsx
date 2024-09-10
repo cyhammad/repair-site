@@ -1,7 +1,5 @@
 import AboutSection from "@/components/AboutSection";
 import CompaniesStrip from "@/components/CompaniesStrip";
-import { ImagesSlider } from "@/components/ImagesSlider";
-import MainBanner from "@/components/MainBanner";
 import OneCallSection from "@/components/OneCallSection";
 import OurFeatures from "@/components/OurFeatures";
 import ReviewSection from "@/components/ReviewSection";
@@ -14,7 +12,6 @@ export default function Home() {
       <SliderBanner />
       <CompaniesStrip />
       <OurFeatures />
-      {/* <MainBanner /> */}
       <AboutSection />
       <OneCallSection />
       <div className="flex items-center flex-col gap-10 py-20 justify-center w-full" id="services">
