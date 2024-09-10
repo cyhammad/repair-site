@@ -6,7 +6,7 @@ import HeaderDropdown from "./HeaderDropdown";
 
 export default function Header() {
   return (
-    <div className="flex items-center justify-center fixed w-full bg-white">
+    <div className="flex items-center justify-center fixed w-full bg-white z-50 pb-3">
       <div className="flex flex-col w-full max-w-7xl px-5">
         <div className="flex justify-between items-center py-5 md:py-0 md:items-end">
           <Link href="/" className="flex text-2xl items-center">
