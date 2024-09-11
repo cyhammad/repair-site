@@ -23,7 +23,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="py-1.5 max-w-screen overflow-hidden flex w-full text-sm items-center justify-center bg-primary text-white">
+      <div className="py-1.5 max-w-screen overflow-hidden flex w-full text-xs sm:text-sm items-center justify-center bg-primary text-white">
         <div className="flex w-full max-w-7xl px-5">
           <button className="pr-5 border-r border-white">
             Call us: <span className="font-black">+123456789</span>

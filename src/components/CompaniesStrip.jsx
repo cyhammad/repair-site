@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
+import TertiaryButton from "./buttons/TertiaryButton";
 
 export default function CompaniesStrip() {
   return (
-    <div className="py-10 w-full flex items-center justify-center bg-primary max-w-screen overflow-hidden">
+    <div className="py-5 text-white w-full flex items-center justify-center bg-primary max-w-screen overflow-hidden">
       <motion.div
         initial={{
           opacity: 0,
@@ -18,9 +18,14 @@ export default function CompaniesStrip() {
         transition={{
           duration: 0.6,
         }}
-        className="flex w-full justify-evenly flex-wrap items-center gap-10 px-5 max-w-7xl"
+        className="flex w-full justify-between items-center gap-3 px-5 max-w-7xl"
       >
-        <Image
+        <h1 className="text-center w-full font-bold">
+          From washing machines and dryers to stoves, cookers, ovens,
+          televisions, dishwashers, and refrigerators, we handle it all!
+        </h1>
+
+        {/* <Image
           src="/siemens-white.svg"
           alt="Siemens"
           width={150}
@@ -28,7 +33,7 @@ export default function CompaniesStrip() {
         />
         <Image src="/bosch.svg" alt="Bosch" width={150} height={150} />
         <Image src="/lg-white.svg" alt="LG" width={150} height={150} />
-        <Image src="/samsung.svg" alt="Samsung" width={150} height={150} />
+        <Image src="/samsung.svg" alt="Samsung" width={150} height={150} /> */}
       </motion.div>
     </div>
   );

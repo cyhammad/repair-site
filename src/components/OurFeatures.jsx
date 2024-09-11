@@ -31,10 +31,13 @@ export default function OurFeatures() {
               height={100}
               alt="feature1"
             />
-            <h1 className="text-3xl font-black">Loyalty</h1>
+            <h1 className="text-3xl font-black">
+              Affordable <br />
+              Rates
+            </h1>
             <span className="text-black/70">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              dicta recusandae odit at fugiat?
+              Quality service doesn't have to break the bank. We offer
+              competitive pricing and transparent quotes.
             </span>
           </div>
           <div className="flex flex-col gap-3 px-10 items-center justify-center text-center">
@@ -44,10 +47,10 @@ export default function OurFeatures() {
               height={100}
               alt="feature2"
             />
-            <h1 className="text-3xl font-black">Usability</h1>
+            <h1 className="text-3xl font-black">Certified Technicians</h1>
             <span className="text-black/70">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              dicta recusandae odit at fugiat?
+              Our team is trained and certified to handle all major appliance
+              brands and models.
             </span>
           </div>
           <div className="flex flex-col gap-3 px-10 items-center justify-center text-center">
@@ -57,10 +60,10 @@ export default function OurFeatures() {
               height={100}
               alt="feature3"
             />
-            <h1 className="text-3xl font-black">Trust</h1>
+            <h1 className="text-3xl font-black">Customer Satisfaction</h1>
             <span className="text-black/70">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              dicta recusandae odit at fugiat?
+              Your satisfaction is our top priority. We ensure all repairs are
+              done to the highest standards.
             </span>
           </div>
         </motion.div>

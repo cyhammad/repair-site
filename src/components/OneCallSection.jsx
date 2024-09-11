@@ -29,7 +29,7 @@ export default function OneCallSection() {
           className="font-medium max-w-lg"
         >
           Sometimes you need to call in the skilled and most qualified person
-          for perfect repair. This is where the handyman comes in handy.
+          for perfect repair. Ready to schedule a repair? Contact us today!
         </motion.span>
         <motion.div
           initial="hide"

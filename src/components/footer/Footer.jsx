@@ -15,9 +15,10 @@ export default function Footer() {
           <div className="flex flex-col max-w-[75%] gap-5">
             <h1 className="text-4xl">LogoHere</h1>
             <span className="text-white/90">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
-              quidem optio perferendis nobis ut expedita ipsa deleniti, minima
-              unde, temporibus, quia porro iure explicabo et sed.
+              At Fast Repairs, we specialize in repairing a wide range of home
+              appliances, ensuring they run smoothly and efficiently. Our team
+              of certified technicians is dedicated to providing top-notch
+              service for all your appliance repair needs.
             </span>
           </div>
           <div className="flex flex-col text-white/75 w-full gap-2">

@@ -43,12 +43,17 @@ export default function AboutSection() {
         >
           <h1 className="text-5xl font-black">About Us</h1>
           <span className="text-xl font-bold">Here is our mission</span>
-          <span className="text-lg font-medium">
-            We are a team of professional technicians who specialize in
-            repairing home appliances. We are dedicated to providing you with
-            the best service possible. Our goal is to make sure that your
-            appliances are working as efficiently as possible so that you can
-            get back to your daily routine.
+          <span className="font-medium">
+            At Fast Repairs, we are dedicated to providing top-notch home
+            appliance repair services. With years of experience in the industry,
+            our mission is to deliver reliable, efficient, and affordable repair
+            solutions to our valued customers. Our team of certified technicians
+            is trained to handle all major appliance brands and models, ensuring
+            your appliances are in expert hands. <br /> We pride ourselves on
+            our commitment to customer satisfaction and our ability to solve
+            even the most challenging appliance issues. Whether it's a minor
+            repair or a major overhaul, we approach every job with the same
+            level of professionalism and care.
           </span>
           <div className="flex flex-col gap-2">
             <span className="text-lg text-black/40 font-bold">
