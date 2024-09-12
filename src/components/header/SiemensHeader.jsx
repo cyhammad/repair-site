@@ -5,7 +5,7 @@ import Navlink from "./Navlink";
 import HeaderDropdown from "./HeaderDropdown";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function SiemensHeader() {
   // When scrollY reaches 100 change background color
@@ -17,7 +17,9 @@ export default function SiemensHeader() {
     setScroll(scrollY > 100 ? "bg-siemensPrimary" : "bg-transparent");
   };
 
-  window.addEventListener("scroll", handleScroll);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
@@ -41,9 +43,21 @@ export default function SiemensHeader() {
           </div>
           <div className="hidden md:flex gap-5 uppercase text-white">
             <Navlink company="Siemens" href="/companies/siemens" title="Home" />
-            <Navlink company="Siemens" href="/companies/siemens#about" title="About" />
-            <Navlink company="Siemens" href="/companies/siemens#services" title="Services" />
-            <Navlink company="Siemens" href="/companies/siemens#contact" title="Contact" />
+            <Navlink
+              company="Siemens"
+              href="/companies/siemens#about"
+              title="About"
+            />
+            <Navlink
+              company="Siemens"
+              href="/companies/siemens#services"
+              title="Services"
+            />
+            <Navlink
+              company="Siemens"
+              href="/companies/siemens#contact"
+              title="Contact"
+            />
           </div>
         </div>
       </div>
