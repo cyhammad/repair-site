@@ -12,7 +12,7 @@ export function ServicesSection({ company = "Logo Here" }) {
     {
       description: "Washing Machine Repair",
       title: "#1",
-      src: "/washing-machine-repair-2.jpg",
+      src: "/washing-machine-repair.webp",
       ctaText: "Hire Us",
       ctaLink: "tel:+1234567890",
       content: () => {
@@ -57,7 +57,7 @@ export function ServicesSection({ company = "Logo Here" }) {
       src:
         company === "LG" || company === "Samsung"
           ? "/tv-repair.jpg"
-          : "/stove-repair.webp",
+          : "/stove-repair.jpg",
       ctaText: "Hire Us",
       ctaLink: "tel:+1234567890",
       content: () => {
@@ -86,7 +86,7 @@ export function ServicesSection({ company = "Logo Here" }) {
     {
       description: "Dishwasher Repair",
       title: "#4",
-      src: "/dishwasher-repair.jpg",
+      src: "/dishwasher-repair.webp",
       ctaText: "Hire Us",
       ctaLink: "tel:+1234567890",
       content: () => {
@@ -190,9 +190,8 @@ export function ServicesSection({ company = "Logo Here" }) {
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
                   quality={100}
-                  priority
-                  width={200}
-                  height={200}
+                  width={600}
+                  height={600}
                   src={active.src}
                   alt={active.title}
                   className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
@@ -269,8 +268,8 @@ export function ServicesSection({ company = "Logo Here" }) {
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
                   quality={100}
-                  width={100}
-                  height={100}
+                  width={500}
+                  height={500}
                   src={card.src}
                   alt={card.title}
                   className="h-60 w-full  rounded-lg object-cover object-top"

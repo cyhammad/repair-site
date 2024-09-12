@@ -18,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${font.className} antialiased flex flex-col`}>
+      <body className={`${font.className} flex flex-col`}>
         {children}
         <FixedCallButtons />
       </body>
