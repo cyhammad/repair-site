@@ -11,7 +11,7 @@ export function ServicesSection({ company = "Logo Here" }) {
   const cards = [
     {
       description: "Washing Machine Repair",
-      title: "#1",
+      title: "We provide",
       src: "/washing-machine-repair.webp",
       ctaText: "Hire Us",
       ctaLink: "tel:+1234567890",
@@ -31,7 +31,7 @@ export function ServicesSection({ company = "Logo Here" }) {
     },
     {
       description: "Dryer Repair",
-      title: "#2",
+      title: "We provide",
       src: "/dryer-repair.webp",
       ctaText: "Hire Us",
       ctaLink: "tel:+1234567890",
@@ -53,7 +53,7 @@ export function ServicesSection({ company = "Logo Here" }) {
         company === "Lg" || company === "Samsung"
           ? "Television Repair"
           : "Stove / Cooker Repair",
-      title: "#3",
+      title: "We provide",
       src:
         company === "LG" || company === "Samsung"
           ? "/tv-repair.jpg"
@@ -85,7 +85,7 @@ export function ServicesSection({ company = "Logo Here" }) {
     },
     {
       description: "Dishwasher Repair",
-      title: "#4",
+      title: "We provide",
       src: "/dishwasher-repair.webp",
       ctaText: "Hire Us",
       ctaLink: "tel:+1234567890",
@@ -105,7 +105,7 @@ export function ServicesSection({ company = "Logo Here" }) {
     },
     {
       description: "Refridgerator Repair",
-      title: "#5",
+      title: "We provide",
       src: "/fridge-repair.webp",
       ctaText: "Hire Us",
       ctaLink: "tel:+1234567890",
