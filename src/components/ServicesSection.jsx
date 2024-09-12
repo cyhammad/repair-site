@@ -123,26 +123,6 @@ export function ServicesSection({ company = "Logo Here" }) {
         );
       },
     },
-    {
-      description: "Gas Oven Repair",
-      title: "#6",
-      src: "/oven-repair.webp",
-      ctaText: "Hire Us",
-      ctaLink: "tel:+1234567890",
-      content: () => {
-        return (
-          <div className="flex flex-col gap-4">
-            <p>
-              Common issues with gas ovens include the oven not heating, the
-              oven not turning on, or the oven not cooking evenly. We provide a
-              same-day service, so you can get your oven back up and running in
-              no time.
-            </p>
-            <CallAndWhatsappButton company={company} />
-          </div>
-        );
-      },
-    },
   ];
   const [active, setActive] = useState(null);
   const id = useId();
@@ -209,6 +189,7 @@ export function ServicesSection({ company = "Logo Here" }) {
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
+                  quality={100}
                   priority
                   width={200}
                   height={200}
@@ -287,6 +268,7 @@ export function ServicesSection({ company = "Logo Here" }) {
             <div className="flex gap-4 flex-col  w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
+                  quality={100}
                   width={100}
                   height={100}
                   src={card.src}

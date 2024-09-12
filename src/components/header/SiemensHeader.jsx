@@ -32,6 +32,7 @@ export default function SiemensHeader() {
         <div className="flex justify-between items-center py-5 md:py-0 md:items-end">
           <Link href="/" className="flex text-2xl items-center">
             <Image
+              quality={100}
               src="/siemens-white.svg"
               width={150}
               height={80}

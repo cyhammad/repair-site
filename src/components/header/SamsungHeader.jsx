@@ -11,7 +11,13 @@ export default function SamsungHeader() {
       <div className="flex flex-col w-full max-w-7xl px-5 md:pb-5">
         <div className="flex justify-between items-center py-5 md:py-0 md:items-end">
           <Link href="/" className="flex mb-1 items-center">
-            <Image src="/samsung.svg" width={120} height={80} alt="Samsung" />
+            <Image
+              quality={100}
+              src="/samsung.svg"
+              width={120}
+              height={80}
+              alt="Samsung"
+            />
           </Link>
           <div className="flex md:hidden">
             <HeaderDropdown />

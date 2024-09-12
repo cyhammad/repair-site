@@ -26,6 +26,7 @@ export default function OurFeatures({ company = "Logo Here" }) {
         >
           <div className="flex flex-col gap-3 px-10 items-center justify-center text-center">
             <Image
+              quality={100}
               src="/feature1.svg"
               width={100}
               height={100}
@@ -42,6 +43,7 @@ export default function OurFeatures({ company = "Logo Here" }) {
           </div>
           <div className="flex flex-col gap-3 px-10 items-center justify-center text-center">
             <Image
+              quality={100}
               src="/feature2.svg"
               width={100}
               height={100}
@@ -55,6 +57,7 @@ export default function OurFeatures({ company = "Logo Here" }) {
           </div>
           <div className="flex flex-col gap-3 px-10 items-center justify-center text-center">
             <Image
+              quality={100}
               src="/feature3.svg"
               width={100}
               height={100}

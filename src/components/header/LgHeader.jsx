@@ -11,7 +11,13 @@ export default function LgHeader() {
       <div className="flex flex-col w-full max-w-7xl px-5">
         <div className="flex justify-between h-full items-center py-5 md:py-0 md:items-end">
           <Link href="/" className="flex mb-3 items-center">
-            <Image src="/lg.svg" width={100} height={50} alt="Lg" />
+            <Image
+              quality={100}
+              src="/lg.svg"
+              width={100}
+              height={50}
+              alt="Lg"
+            />
           </Link>
           <div className="flex md:hidden">
             <HeaderDropdown />
@@ -19,8 +25,16 @@ export default function LgHeader() {
           <div className="hidden md:flex md:pb-5 gap-5 uppercase">
             <Navlink company="Lg" href="/companies/lg" title="Home" />
             <Navlink company="Lg" href="/companies/lg#about" title="About" />
-            <Navlink company="Lg" href="/companies/lg#services" title="Services" />
-            <Navlink company="Lg" href="/companies/lg#contact" title="Contact" />
+            <Navlink
+              company="Lg"
+              href="/companies/lg#services"
+              title="Services"
+            />
+            <Navlink
+              company="Lg"
+              href="/companies/lg#contact"
+              title="Contact"
+            />
           </div>
         </div>
       </div>

@@ -18,25 +18,25 @@ export default function ReviewSection({
       name: "Dawood Ayoob",
       quote:
         "The best company I have ever worked with. Their team is very professional and always ready to help. I will definitely recommend them to my friends and family.",
-      title: "TBR Company",
+      title: "Washers Laundry",
     },
     {
       name: "Ayesha Ali",
       quote:
         "I am very happy with the services provided by this company. They are very professional and always ready to help. I will definitely recommend them to my friends and family.",
-      title: "MOB Mobile Company",
+      title: "Friends Home Company",
     },
     {
       name: "Ali Raza",
       quote:
         "To be honest, I was a bit skeptical at first but after working with them, I can say that they are the best in the business. I will definitely recommend them to my friends and family.",
-      title: "TV Pro Company",
+      title: "Japan Electronics",
     },
     {
       name: "Sara Khan",
       quote:
         "I am very happy with the services provided by this company. They are very professional and always ready to help. I will definitely recommend them to my friends and family.",
-      title: "Blue Company",
+      title: "TelePro Company",
     },
   ];
 

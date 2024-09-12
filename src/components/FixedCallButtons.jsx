@@ -13,7 +13,7 @@ export default function FixedCallButtons() {
           }}
           className="rounded-md flex items-center justify-center h-14 w-14 bg-green-400 border border-green-600 pointer-events-auto"
         >
-          <Image src="/whatsapp.svg" alt="Whatsapp" width={40} height={40} />
+          <Image quality={100} src="/whatsapp.svg" alt="Whatsapp" width={40} height={40} />
         </button>
         <button
           onClick={() => {
@@ -21,7 +21,7 @@ export default function FixedCallButtons() {
           }}
           className="rounded-md flex items-center justify-center h-14 w-14 border-black border bg-secondary pointer-events-auto"
         >
-          <Image src="/call.svg" alt="Call us" width={35} height={35} />
+          <Image quality={100} src="/call.svg" alt="Call us" width={35} height={35} />
         </button>
       </div>
     </div>
