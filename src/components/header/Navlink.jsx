@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils";
 
 export default function Navlink({ href, title, company = "" }) {
   const pathname = usePathname();
-  console.log("PATHNAME", pathname);
   const isActive = pathname === href;
   return (
     <Link

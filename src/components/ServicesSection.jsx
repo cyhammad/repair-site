@@ -190,8 +190,8 @@ export function ServicesSection({ company = "Logo Here" }) {
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
                   quality={100}
-                  width={600}
-                  height={600}
+                  width={1000}
+                  height={1000}
                   src={active.src}
                   alt={active.title}
                   className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
@@ -268,8 +268,8 @@ export function ServicesSection({ company = "Logo Here" }) {
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
                   quality={100}
-                  width={500}
-                  height={500}
+                  width={1000}
+                  height={1000}
                   src={card.src}
                   alt={card.title}
                   className="h-60 w-full  rounded-lg object-cover object-top"

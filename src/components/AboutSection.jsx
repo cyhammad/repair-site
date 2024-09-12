@@ -22,7 +22,7 @@ export default function AboutSection({ company = "Logo Here" }) {
         >
           <div className="relative w-[300px] h-[300px] sm:w-[500px] sm:h-[420px]">
             <BlobBG company={company} />
-            <BlobImage imgUrl="/washing-machine-repair.jpg" />
+            <BlobImage imgUrl="/repair.png" />
             <div className="absolute right-0 top-[10px]">
               <Plus size={24} className="text-primary" />
             </div>
