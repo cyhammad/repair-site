@@ -8,6 +8,7 @@ export default function ReviewSection({
   speed = "fast",
   pauseOnHover = true,
   className,
+  company = "",
 }) {
   const containerRef = React.useRef(null);
   const scrollerRef = React.useRef(null);
@@ -103,10 +104,18 @@ export default function ReviewSection({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-secondary px-8 py-6 md:w-[450px]"
-            style={{
-              background: "var(--secondary)",
-            }}
+            className={cn(
+              "w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 px-8 py-6 md:w-[450px]",
+              company === "Lg"
+                ? "border-lgSecondary text-white bg-lgSecondary"
+                : company === "Samsung"
+                ? "border-samsungPrimary shadow-md"
+                : company === "Bosch"
+                ? "border-black/10 shadow text-black bg-white"
+                : company === "Siemens"
+                ? "border-siemensPrimary shadow-md"
+                : "border-secondary"
+            )}
             key={item.name}
           >
             <blockquote>
@@ -114,15 +123,15 @@ export default function ReviewSection({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className=" relative z-20 text-sm leading-[1.6] text-white font-normal">
+              <span className=" relative z-20 text-sm leading-[1.6] font-normal">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  <span className=" text-sm leading-[1.6] text-white font-bold">
+                  <span className=" text-sm leading-[1.6] font-bold">
                     {item.name}
                   </span>
-                  <span className=" text-sm leading-[1.6] text-white font-bold">
+                  <span className=" text-sm leading-[1.6] font-bold">
                     {item.title}
                   </span>
                 </span>

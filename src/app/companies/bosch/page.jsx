@@ -6,29 +6,29 @@ import ReviewSection from "@/components/ReviewSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { SliderBanner } from "@/components/SliderBanner";
 import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
+import BoschHeader from "@/components/header/BoschHeader";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <SliderBanner />
-      <CompaniesStrip />
-      <OurFeatures />
-      <AboutSection />
-      <OneCallSection />
+      <BoschHeader />
+      <SliderBanner company="Bosch" />
+      <CompaniesStrip company="Bosch" />
+      <OurFeatures company="Bosch" />
+      <AboutSection company="Bosch" />
+      <OneCallSection company="Bosch" />
       <div
         className="flex items-center flex-col gap-10 py-20 justify-center w-full"
         id="services"
       >
         <h1 className="text-5xl font-black">Our Services</h1>
-        <ServicesSection />
+        <ServicesSection company="Bosch" />
       </div>
       <div className="flex items-center flex-col gap-10 py-20 max-w-screen overflow-hidden justify-center w-full">
         <h1 className="text-5xl font-black">Reviews</h1>
-        <ReviewSection />
+        <ReviewSection company="Bosch" />
       </div>
-      <Footer />
+      <Footer company="Bosch" />
     </>
   );
 }

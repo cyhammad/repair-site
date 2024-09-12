@@ -1,8 +1,6 @@
 import { Plus } from "lucide-react";
-import React from "react";
-import PrimaryButton from "./buttons/PrimaryButton";
-import SecondaryButton from "./buttons/SecondaryButton";
 import { StarFilledIcon } from "@radix-ui/react-icons";
+import CallAndWhatsappButton from "./buttons/CallAndWhatsappButton";
 
 export default function MainBanner() {
   return (
@@ -16,10 +14,7 @@ export default function MainBanner() {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ipsa,
             voluptatem a odit ad eaque molestias quidem
           </span>
-          <div className="flex items-center gap-3">
-            <PrimaryButton>Call Us</PrimaryButton>
-            <SecondaryButton>Whatsapp Us</SecondaryButton>
-          </div>
+          <CallAndWhatsappButton />
           <div className="flex items-center gap-0 5">
             <StarFilledIcon className="text-primary" />
             <StarFilledIcon className="text-primary" />

@@ -1,12 +1,12 @@
 "use client";
 
 import { Plus } from "lucide-react";
-import PrimaryButton from "./buttons/PrimaryButton";
-import SecondaryButton from "./buttons/SecondaryButton";
 import { motion } from "framer-motion";
 import { leftToRightVariants, rightToLeftVariants } from "@/lib/variants";
+import CallAndWhatsappButton from "./buttons/CallAndWhatsappButton";
+import { cn } from "@/lib/utils";
 
-export default function AboutSection() {
+export default function AboutSection({ company = "Logo Here" }) {
   return (
     <div
       className="flex items-center justify-center w-full relative max-w-screen overflow-hidden"
@@ -21,7 +21,7 @@ export default function AboutSection() {
           className="flex items-center justify-center md:justify-start w-full"
         >
           <div className="relative w-[300px] h-[300px] sm:w-[500px] sm:h-[420px]">
-            <BlobBG />
+            <BlobBG company={company} />
             <BlobImage imgUrl="/washing-machine-repair.jpg" />
             <div className="absolute right-0 top-[10px]">
               <Plus size={24} className="text-primary" />
@@ -44,7 +44,7 @@ export default function AboutSection() {
           <h1 className="text-5xl font-black">About Us</h1>
           <span className="text-xl font-bold">Here is our mission</span>
           <span className="font-medium">
-            At Fast Repairs, we are dedicated to providing top-notch home
+            At {company} Repairs, we are dedicated to providing top-notch home
             appliance repair services. With years of experience in the industry,
             our mission is to deliver reliable, efficient, and affordable repair
             solutions to our valued customers. Our team of certified technicians
@@ -57,12 +57,9 @@ export default function AboutSection() {
           </span>
           <div className="flex flex-col gap-2">
             <span className="text-lg text-black/40 font-bold">
-              - Sarah B, Owner.
+              - {company} Official
             </span>
-            <div className="flex items-center gap-3">
-              <PrimaryButton>Call Us</PrimaryButton>
-              <SecondaryButton>Whatsapp Us</SecondaryButton>
-            </div>
+            <CallAndWhatsappButton company={company} />
           </div>
         </motion.div>
       </div>
@@ -84,9 +81,20 @@ const BlobImage = ({ imgUrl }) => {
   );
 };
 
-const BlobBG = () => (
+const BlobBG = ({ company }) => (
   <div
-    className="w-full aspect-[1.2/1] bg-blob absolute"
+    className={cn(
+      "w-full aspect-[1.2/1] absolute",
+      company === "Lg"
+        ? "bg-lgBlob"
+        : company === "Samsung"
+        ? "bg-samsungBlob"
+        : company === "Bosch"
+        ? "bg-boschBlob"
+        : company === "Siemens"
+        ? "bg-siemensBlob"
+        : "bg-blob"
+    )}
     style={{
       borderRadius: "89% 11% 39% 61% / 67% 14% 86% 33%",
     }}

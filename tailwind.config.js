@@ -17,6 +17,22 @@ module.exports = {
         primary: "#35A4DC",
         secondary: "#17497C",
         blob: "#F0F4F9",
+
+        siemensPrimary: "#01183B",
+        siemensSecondary: "#FFFFFF",
+        siemensBlob: "#F0F4F9",
+
+        boschPrimary: "#007BC0",
+        boschSecondary: "#2D3033",
+        boschBlob: "#F0F1F2",
+
+        samsungPrimary: "#000000",
+        samsungSecondary: "#FFFFFF",
+        samsungBlob: "#F7F7F7",
+
+        lgPrimary: "#A50034",
+        lgSecondary: "#000000",
+        lgBlob: "#F6F3EB",
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -1,6 +1,21 @@
-export default function PrimaryButton({ children }) {
+import { cn } from "@/lib/utils";
+
+export default function PrimaryButton({ children, company = "" }) {
   return (
-    <button className="bg-primary flex gap-2 items-center border-primary border-2 hover:border-primary text-white px-5 hover:bg-primary font-bold py-2 rounded-md">
+    <button
+      className={cn(
+        "flex gap-2 items-center border-2 text-white px-5 font-bold py-2 rounded-md",
+        company === "Siemens"
+          ? "bg-siemensPrimary border-siemensPrimary hover:border-siemensPrimary hover:bg-siemensPrimary"
+          : company === "Bosch"
+          ? "bg-boschPrimary border-boschPrimary hover:border-boschPrimary hover:bg-boschPrimary"
+          : company === "Lg"
+          ? "bg-lgPrimary border-lgPrimary hover:border-lgPrimary hover:bg-lgPrimary"
+          : company === "Samsung"
+          ? "bg-samsungPrimary border-samsungPrimary hover:border-samsungPrimary hover:bg-samsungPrimary"
+          : "bg-primary border-primary hover:border-primary hover:bg-primary"
+      )}
+    >
       {children}
     </button>
   );

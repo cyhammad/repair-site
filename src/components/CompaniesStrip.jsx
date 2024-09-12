@@ -1,11 +1,24 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import TertiaryButton from "./buttons/TertiaryButton";
 
-export default function CompaniesStrip() {
+export default function CompaniesStrip({ company = "Logo Here" }) {
   return (
-    <div className="py-5 text-white w-full flex items-center justify-center bg-primary max-w-screen overflow-hidden">
+    <div
+      className={cn(
+        "py-5 text-white w-full flex items-center justify-center max-w-screen overflow-hidden",
+        company === "Siemens"
+          ? "bg-siemensPrimary"
+          : company === "Bosch"
+          ? "bg-boschPrimary"
+          : company === "Lg"
+          ? "bg-lgPrimary"
+          : company === "Samsung"
+          ? "bg-samsungPrimary"
+          : "bg-primary"
+      )}
+    >
       <motion.div
         initial={{
           opacity: 0,
@@ -21,19 +34,12 @@ export default function CompaniesStrip() {
         className="flex w-full justify-between items-center gap-3 px-5 max-w-7xl"
       >
         <h1 className="text-center w-full font-bold">
-          From washing machines and dryers to stoves, cookers, ovens,
-          televisions, dishwashers, and refrigerators, we handle it all!
+          From washing machines, dryers, ovens,{" "}
+          {company === "Samsung" || company === "Lg"
+            ? "televisions"
+            : "stove/cookers"}
+          , dishwashers, and refrigerators, we handle it all!
         </h1>
-
-        {/* <Image
-          src="/siemens-white.svg"
-          alt="Siemens"
-          width={150}
-          height={150}
-        />
-        <Image src="/bosch.svg" alt="Bosch" width={150} height={150} />
-        <Image src="/lg-white.svg" alt="LG" width={150} height={150} />
-        <Image src="/samsung.svg" alt="Samsung" width={150} height={150} /> */}
       </motion.div>
     </div>
   );
