@@ -1,1 +1,1 @@
-export const phoneNumber = "+97123456789";
+export const phoneNumber = "+971509790702";

@@ -10,9 +10,9 @@ export default function Footer({ company = "Logo Here" }) {
         <path
           fill={
             company === "Siemens"
-              ? "#01183B"
+              ? "#019997"
               : company === "Bosch"
-              ? "#007BC0"
+              ? "#F80000"
               : company === "Lg"
               ? "#A50034"
               : company === "Samsung"

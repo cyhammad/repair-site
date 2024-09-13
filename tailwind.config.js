@@ -18,11 +18,11 @@ module.exports = {
         secondary: "#17497C",
         blob: "#F0F4F9",
 
-        siemensPrimary: "#01183B",
+        siemensPrimary: "#019997",
         siemensSecondary: "#FFFFFF",
         siemensBlob: "#F0F4F9",
 
-        boschPrimary: "#007BC0",
+        boschPrimary: "#F80000",
         boschSecondary: "#2D3033",
         boschBlob: "#F0F1F2",
 

@@ -3,6 +3,7 @@ import CompaniesStrip from "@/components/CompaniesStrip";
 import OneCallSection from "@/components/OneCallSection";
 import OurFeatures from "@/components/OurFeatures";
 import ReviewSection from "@/components/ReviewSection";
+import { ServicesExpandable } from "@/components/ServicesExpandable";
 import { ServicesSection } from "@/components/ServicesSection";
 import { SliderBanner } from "@/components/SliderBanner";
 import Footer from "@/components/footer/Footer";
