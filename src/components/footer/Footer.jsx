@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-export default function Footer({ company = "Logo Here" }) {
+export default function Footer({ company = "UAE Customers Care" }) {
   return (
     <footer className="w-full relative flex flex-col">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

@@ -6,15 +6,16 @@ import { useOutsideClick } from "@/hooks/use-outside-click";
 import PrimaryButton from "./buttons/PrimaryButton";
 import CallAndWhatsappButton from "./buttons/CallAndWhatsappButton";
 import { cn } from "@/lib/utils";
+import { phoneNumber } from "@/lib/phone";
 
-export function ServicesSection({ company = "Logo Here" }) {
+export function ServicesSection({ company = "UAE Customers Care" }) {
   const cards = [
     {
       description: "Washing Machine Repair",
       title: "We provide 1",
       src: "/washing-machine-repair.webp",
       ctaText: "Hire Us",
-      ctaLink: "tel:+1234567890",
+      ctaLink: `tel:${phoneNumber}`,
       content: () => {
         return (
           <div className="flex flex-col gap-4">
@@ -24,7 +25,6 @@ export function ServicesSection({ company = "Logo Here" }) {
               service, so you can get your washing machine back up and running
               in no time.
             </p>
-            <CallAndWhatsappButton company={company} />
           </div>
         );
       },
@@ -34,7 +34,7 @@ export function ServicesSection({ company = "Logo Here" }) {
       title: "We provide 2",
       src: "/dryer-repair.webp",
       ctaText: "Hire Us",
-      ctaLink: "tel:+1234567890",
+      ctaLink: `tel:${phoneNumber}`,
       content: () => {
         return (
           <div className="flex flex-col gap-4">
@@ -43,7 +43,6 @@ export function ServicesSection({ company = "Logo Here" }) {
               dryer not starting. We provide a same-day service, so you can get
               your dryer back up and running in no time.
             </p>
-            <CallAndWhatsappButton company={company} />
           </div>
         );
       },
@@ -59,7 +58,7 @@ export function ServicesSection({ company = "Logo Here" }) {
           ? "/tv-repair.jpg"
           : "/stove-repair.jpg",
       ctaText: "Hire Us",
-      ctaLink: "tel:+1234567890",
+      ctaLink: `tel:${phoneNumber}`,
       content: () => {
         return (
           <div className="flex flex-col gap-4">
@@ -78,7 +77,40 @@ export function ServicesSection({ company = "Logo Here" }) {
                 and running in no time.
               </p>
             )}
-            <CallAndWhatsappButton company={company} />
+          </div>
+        );
+      },
+    },
+    {
+      description:
+        company === "UAE Customers Care"
+          ? "Television Repair"
+          : "Stove / Cooker Repair",
+      title: "We provide 3",
+      src:
+        company === "UAE Customers Care"
+          ? "/tv-repair.jpg"
+          : "/stove-repair.jpg",
+      ctaText: "Hire Us",
+      ctaLink: `tel:${phoneNumber}`,
+      content: () => {
+        return (
+          <div className="flex flex-col gap-4">
+            {company === "UAE Customers Care" ? (
+              <p>
+                Problems with televisions include the television not turning on,
+                the television not displaying an image, or the television not
+                connecting to the internet. We provide a same-day service, so
+                you can get your television back up and running in no time.
+              </p>
+            ) : (
+              <p>
+                Common issues with stoves include the stove not heating, the
+                stove not turning on, or the stove not cooking evenly. We
+                provide a same-day service, so you can get your stove back up
+                and running in no time.
+              </p>
+            )}
           </div>
         );
       },
@@ -88,7 +120,7 @@ export function ServicesSection({ company = "Logo Here" }) {
       title: "We provide 4",
       src: "/dishwasher-repair.webp",
       ctaText: "Hire Us",
-      ctaLink: "tel:+1234567890",
+      ctaLink: `tel:${phoneNumber}`,
       content: () => {
         return (
           <div className="flex flex-col gap-4">
@@ -98,7 +130,6 @@ export function ServicesSection({ company = "Logo Here" }) {
               dishwasher not starting. We provide a same-day service, so you can
               get your dishwasher back up and running in no time.
             </p>
-            <CallAndWhatsappButton company={company} />
           </div>
         );
       },
@@ -108,17 +139,16 @@ export function ServicesSection({ company = "Logo Here" }) {
       title: "We provide 5",
       src: "/fridge-repair.webp",
       ctaText: "Hire Us",
-      ctaLink: "tel:+1234567890",
+      ctaLink: `tel:${phoneNumber}`,
       content: () => {
         return (
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 overflow-auto">
             <p>
               Issues with refrigerators include the refrigerator not cooling,
               the refrigerator making strange noises, or the refrigerator not
               dispensing water. We provide a same-day service, so you can get
               your refrigerator back up and running in no time.
             </p>
-            <CallAndWhatsappButton company={company} />
           </div>
         );
       },
@@ -205,11 +235,12 @@ export function ServicesSection({ company = "Logo Here" }) {
                       layoutId={`title-${active.title}-${id}`}
                       className="font-medium text-base"
                     >
-                      {active.title}
+                      We provide
+                      {/* {active.title} */}
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
-                      className="text-base"
+                      className="text-lg font-bold"
                     >
                       {active.description}
                     </motion.p>
@@ -227,18 +258,19 @@ export function ServicesSection({ company = "Logo Here" }) {
                     {active.ctaText}
                   </motion.a>
                 </div>
-                <div className="pt-4 relative px-4">
+                <div className="py-4 relative px-4">
                   <motion.div
                     layout
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-xs md:text-sm lg:text-base h-40 pb-10 flex flex-col items-start gap-4 overflow-auto [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
                     {typeof active.content === "function"
                       ? active.content()
                       : active.content}
                   </motion.div>
+                  <CallAndWhatsappButton company={company} />
                 </div>
               </div>
             </motion.div>
@@ -280,7 +312,8 @@ export function ServicesSection({ company = "Logo Here" }) {
                   layoutId={`title-${card.title}-${id}`}
                   className="font-medium text-center md:text-left text-base"
                 >
-                  {card.title}
+                  {/* {card.title} */}
+                  We provide
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}

@@ -1,8 +1,13 @@
 import { cn } from "@/lib/utils";
 
-export default function PrimaryButton({ children, company = "" }) {
+export default function PrimaryButton({
+  children,
+  company = "",
+  onClick = () => {},
+}) {
   return (
     <button
+      onClick={onClick}
       className={cn(
         "flex gap-2 items-center border-2 text-white px-5 font-bold py-2 rounded-md",
         company === "Siemens"

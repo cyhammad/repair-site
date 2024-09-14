@@ -1,8 +1,13 @@
 import { cn } from "@/lib/utils";
 
-export default function TertiaryButton({ children, company = "" }) {
+export default function TertiaryButton({
+  children,
+  company = "",
+  onClick = () => {},
+}) {
   return (
     <button
+      onClick={onClick}
       className={cn(
         "border-2 flex gap-2 items-center px-5 transition-all ease-in duration-100 text-white font-bold py-2 rounded-md",
         company === "Lg"

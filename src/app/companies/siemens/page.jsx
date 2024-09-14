@@ -3,6 +3,7 @@ import CompaniesStrip from "@/components/CompaniesStrip";
 import OneCallSection from "@/components/OneCallSection";
 import OurFeatures from "@/components/OurFeatures";
 import ReviewSection from "@/components/ReviewSection";
+import ServicesDetails from "@/components/ServicesDetails";
 import { ServicesSection } from "@/components/ServicesSection";
 import { SliderBanner } from "@/components/SliderBanner";
 import Footer from "@/components/footer/Footer";
@@ -17,6 +18,7 @@ export default function Home() {
       <CompaniesStrip company="Siemens" />
       <OurFeatures company="Siemens" />
       <AboutSection company="Siemens" />
+      <ServicesDetails company="Siemens" />
       <OneCallSection company="Siemens" />
       <div
         className="flex items-center flex-col gap-10 py-20 justify-center w-full"

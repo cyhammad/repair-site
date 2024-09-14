@@ -5,6 +5,7 @@ import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
 import { motion } from "framer-motion";
 import TertiaryButton from "./TertiaryButton";
+import { phoneNumber } from "@/lib/phone";
 
 export default function CallAndWhatsappButton({
   banner = false,
@@ -18,11 +19,32 @@ export default function CallAndWhatsappButton({
       variants={leftToRightVariants}
       className="flex items-center gap-3"
     >
-      <PrimaryButton company={company}>Call Us</PrimaryButton>
+      <PrimaryButton
+        onClick={() => {
+          window.location.href = `tel:${phoneNumber}`;
+        }}
+        company={company}
+      >
+        Call Us
+      </PrimaryButton>
       {banner ? (
-        <TertiaryButton company={company}>Whatsapp Us</TertiaryButton>
+        <TertiaryButton
+          onClick={() => {
+            window.location.href = `https://wa.me/${phoneNumber}`;
+          }}
+          company={company}
+        >
+          Whatsapp Us
+        </TertiaryButton>
       ) : (
-        <SecondaryButton company={company}>Whatsapp Us</SecondaryButton>
+        <SecondaryButton
+          onClick={() => {
+            window.location.href = `https://wa.me/${phoneNumber}`;
+          }}
+          company={company}
+        >
+          Whatsapp Us
+        </SecondaryButton>
       )}
     </motion.div>
   );
