@@ -12,7 +12,7 @@ export default function Header() {
       <div className="flex flex-col w-full max-w-7xl px-5 md:pb-5">
         <div className="flex justify-between items-center py-5 md:py-0 md:items-end">
           <Link href="/" className="flex text-2xl items-center">
-            LogoHere
+            UAE Customers Care
           </Link>
           <div className="flex md:hidden">
             <HeaderDropdown />

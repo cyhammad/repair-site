@@ -39,7 +39,7 @@ export default function Footer({ company = "UAE Customers Care" }) {
       >
         <div className="grid w-full max-w-6xl px-5 pt-10 pb-20 gap-8 sm:grid-cols-[1fr_0.5fr_0.5fr]">
           <div className="flex flex-col max-w-[75%] gap-5">
-            <h1 className="text-4xl">LogoHere</h1>
+            <h1 className="text-4xl">UAE Customers Care</h1>
             <span className="text-white/90">
               At Fast Repairs, we specialize in repairing a wide range of home
               appliances, ensuring they run smoothly and efficiently. Our team
@@ -109,7 +109,7 @@ export default function Footer({ company = "UAE Customers Care" }) {
           </div>
         </div>
         <div className="border-t border-white/10 py-5 w-full flex items-center justify-center">
-          &copy; 2024 LogoHere. All rights reserved.
+          &copy; 2024 UAE Customers Care. All rights reserved.
         </div>
       </div>
     </footer>
