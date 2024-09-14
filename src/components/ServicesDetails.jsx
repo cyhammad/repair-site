@@ -2,13 +2,13 @@ import Image from "next/image";
 import CallAndWhatsappButton from "./buttons/CallAndWhatsappButton";
 import { cn } from "@/lib/utils";
 
-export default function ServicesDetails({ company = "UAE Customers Care" }) {
+export default function ServicesDetails({ company = "UAE Appliances Care" }) {
   return (
     <div className="w-full flex flex-col gap-10 items-center justify-center py-20">
       <div
         className={cn(
           "flex flex-col gap-5 bg-black/10 rounded-xl p-3 max-w-7xl px-5 justify-cente items-center",
-          company === "UAE Customers Care" && "bg-primary/20",
+          company === "UAE Appliances Care" && "bg-primary/20",
           company === "Bosch" && "bg-boschPrimary/20",
           company === "Siemens" && "bg-siemensPrimary/20",
           company === "Samsung" && "bg-samsungPrimary/20",

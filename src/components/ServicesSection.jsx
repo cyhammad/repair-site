@@ -8,7 +8,7 @@ import CallAndWhatsappButton from "./buttons/CallAndWhatsappButton";
 import { cn } from "@/lib/utils";
 import { phoneNumber } from "@/lib/phone";
 
-export function ServicesSection({ company = "UAE Customers Care" }) {
+export function ServicesSection({ company = "UAE Appliances Care" }) {
   const cards = [
     {
       description: "Washing Machine Repair",
@@ -83,12 +83,12 @@ export function ServicesSection({ company = "UAE Customers Care" }) {
     },
     {
       description:
-        company === "UAE Customers Care"
+        company === "UAE Appliances Care"
           ? "Television Repair"
           : "Stove / Cooker Repair",
       title: "We provide 3",
       src:
-        company === "UAE Customers Care"
+        company === "UAE Appliances Care"
           ? "/tv-repair.jpg"
           : "/stove-repair.jpg",
       ctaText: "Hire Us",
@@ -96,7 +96,7 @@ export function ServicesSection({ company = "UAE Customers Care" }) {
       content: () => {
         return (
           <div className="flex flex-col gap-4">
-            {company === "UAE Customers Care" ? (
+            {company === "UAE Appliances Care" ? (
               <p>
                 Problems with televisions include the television not turning on,
                 the television not displaying an image, or the television not

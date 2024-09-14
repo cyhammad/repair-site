@@ -6,7 +6,7 @@ import { leftToRightVariants, rightToLeftVariants } from "@/lib/variants";
 import CallAndWhatsappButton from "./buttons/CallAndWhatsappButton";
 import { cn } from "@/lib/utils";
 
-export default function AboutSection({ company = "UAE Customers Care" }) {
+export default function AboutSection({ company = "UAE Appliances Care" }) {
   return (
     <div
       className="flex items-center justify-center w-full relative max-w-screen overflow-hidden"
