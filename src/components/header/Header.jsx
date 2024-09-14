@@ -33,7 +33,7 @@ export default function Header() {
             }}
             className="pr-5 border-r border-white"
           >
-            Call us: <span className="font-black">+123456789</span>
+            Call us: <span className="font-black">{phoneNumber}</span>
           </button>
           <button
             onClick={() => {
