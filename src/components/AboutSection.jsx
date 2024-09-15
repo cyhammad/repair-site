@@ -55,12 +55,7 @@ export default function AboutSection({ company = "UAE Appliances Care" }) {
             repair or a major overhaul, we approach every job with the same
             level of professionalism and care.
           </span>
-          <div className="flex flex-col gap-2">
-            <span className="text-lg text-black/40 font-bold">
-              - {company} Official
-            </span>
-            <CallAndWhatsappButton company={company} />
-          </div>
+          <CallAndWhatsappButton company={company} />
         </motion.div>
       </div>
     </div>
