@@ -2,13 +2,13 @@ import Image from "next/image";
 import CallAndWhatsappButton from "./buttons/CallAndWhatsappButton";
 import { cn } from "@/lib/utils";
 
-export default function ServicesDetails({ company = "UAE Appliances Care" }) {
+export default function ServicesDetails({ company = "Appliances Care UAE" }) {
   return (
     <div className="w-full flex flex-col gap-10 items-center justify-center py-20">
       <div
         className={cn(
           "flex flex-col gap-5 bg-black/10 rounded-xl p-3 max-w-7xl px-5 justify-cente items-center",
-          company === "UAE Appliances Care" && "bg-primary/20",
+          company === "Appliances Care UAE" && "bg-primary/20",
           company === "Bosch" && "bg-boschPrimary/20",
           company === "Siemens" && "bg-siemensPrimary/20",
           company === "Samsung" && "bg-samsungPrimary/20",
@@ -63,7 +63,7 @@ export default function ServicesDetails({ company = "UAE Appliances Care" }) {
             "Slow wash cycles",
             "Control panel issues",
           ]}
-          imgUrl={"/washing-machine-repair.webp"}
+          imgUrl={"/wash.jpg"}
         />
         <Service
           company={company}
@@ -91,7 +91,7 @@ export default function ServicesDetails({ company = "UAE Appliances Care" }) {
             "Refrigerant leaks",
             "High energy consumption",
           ]}
-          imgUrl={"/fridge-repair.webp"}
+          imgUrl={"/refr.jpg"}
         />
         <Service
           company={company}
@@ -119,7 +119,7 @@ export default function ServicesDetails({ company = "UAE Appliances Care" }) {
             "Detergent residue on dishes",
             "Dishwasher not drying dishes",
           ]}
-          imgUrl={"/dishwasher-repair.webp"}
+          imgUrl={"/dishwasher.jpg"}
         />
         <Service
           company={company}
@@ -148,7 +148,7 @@ export default function ServicesDetails({ company = "UAE Appliances Care" }) {
             "Oven not self-cleaning",
             "Oven not turning off",
           ]}
-          imgUrl={"/oven-repair.webp"}
+          imgUrl={"/oven.jpg"}
         />
         {/* Stove/Cooker if company is Bosch and Siemens else TV repair */}
 
@@ -178,7 +178,7 @@ export default function ServicesDetails({ company = "UAE Appliances Care" }) {
               "Oven not self-cleaning",
               "Oven not turning off",
             ]}
-            imgUrl={"/stove-repair.jpg"}
+            imgUrl={"/cooker.jpg"}
           />
         ) : (
           <Service
@@ -208,7 +208,7 @@ export default function ServicesDetails({ company = "UAE Appliances Care" }) {
               "TV displaying static",
               "TV displaying vertical lines",
             ]}
-            imgUrl={"/tv-repair.jpg"}
+            imgUrl={"/tele.jpg"}
           />
         )}
         {/* Dryer repair */}
@@ -239,7 +239,7 @@ export default function ServicesDetails({ company = "UAE Appliances Care" }) {
             "Dryer not heating well",
             "Dryer not heating properly",
           ]}
-          imgUrl={"/dryer-repair.webp"}
+          imgUrl={"/dry.jpg"}
         />
       </div>
     </div>

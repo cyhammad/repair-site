@@ -6,8 +6,8 @@ import { ImagesSlider } from "./ImagesSlider";
 import CallAndWhatsappButton from "./buttons/CallAndWhatsappButton";
 import { cn } from "@/lib/utils";
 
-export function SliderBanner({ company = "UAE Appliances Care" }) {
-  const images = ["/washing-machine.jpg", "/tv.jpg", "/stove.jpg"];
+export function SliderBanner({ company = "Appliances Care UAE" }) {
+  const images = ["/banner-1.jpg", "/banner-2.jpg", "/banner-3.jpg"];
   return (
     <ImagesSlider
       className={cn("h-[40rem]", company === "Siemens" ? "mt-0" : "mt-[60px]")}
@@ -37,8 +37,8 @@ export function SliderBanner({ company = "UAE Appliances Care" }) {
           ensuring unmatched comfort and convenience. Whether addressing minor
           issues or managing significant breakdowns, we offer unparalleled
           service to keep your household running seamlessly. Trust us for
-          premium {company}
-          appliance repair that guarantees efficiency and reliability.
+          premium {company} appliance repair that guarantees efficiency and
+          reliability.
         </motion.p>
         <CallAndWhatsappButton company={company} banner />
       </motion.div>

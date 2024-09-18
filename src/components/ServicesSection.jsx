@@ -8,12 +8,12 @@ import CallAndWhatsappButton from "./buttons/CallAndWhatsappButton";
 import { cn } from "@/lib/utils";
 import { phoneNumber } from "@/lib/phone";
 
-export function ServicesSection({ company = "UAE Appliances Care" }) {
+export function ServicesSection({ company = "Appliances Care UAE" }) {
   const cards = [
     {
       description: "Washing Machine Repair",
       title: "We provide 1",
-      src: "/washing-machine-repair.webp",
+      src: "/wash.jpg",
       ctaText: "Hire Us",
       ctaLink: `tel:${phoneNumber}`,
       content: () => {
@@ -32,7 +32,7 @@ export function ServicesSection({ company = "UAE Appliances Care" }) {
     {
       description: "Dryer Repair",
       title: "We provide 2",
-      src: "/dryer-repair.webp",
+      src: "/dry.jpg",
       ctaText: "Hire Us",
       ctaLink: `tel:${phoneNumber}`,
       content: () => {
@@ -54,9 +54,7 @@ export function ServicesSection({ company = "UAE Appliances Care" }) {
           : "Stove / Cooker Repair",
       title: "We provide 3",
       src:
-        company === "LG" || company === "Samsung"
-          ? "/tv-repair.jpg"
-          : "/stove-repair.jpg",
+        company === "LG" || company === "Samsung" ? "/tele.jpg" : "/cooker.jpg",
       ctaText: "Hire Us",
       ctaLink: `tel:${phoneNumber}`,
       content: () => {
@@ -82,43 +80,9 @@ export function ServicesSection({ company = "UAE Appliances Care" }) {
       },
     },
     {
-      description:
-        company === "UAE Appliances Care"
-          ? "Television Repair"
-          : "Stove / Cooker Repair",
-      title: "We provide 3",
-      src:
-        company === "UAE Appliances Care"
-          ? "/tv-repair.jpg"
-          : "/stove-repair.jpg",
-      ctaText: "Hire Us",
-      ctaLink: `tel:${phoneNumber}`,
-      content: () => {
-        return (
-          <div className="flex flex-col gap-4">
-            {company === "UAE Appliances Care" ? (
-              <p>
-                Problems with televisions include the television not turning on,
-                the television not displaying an image, or the television not
-                connecting to the internet. We provide a same-day service, so
-                you can get your television back up and running in no time.
-              </p>
-            ) : (
-              <p>
-                Common issues with stoves include the stove not heating, the
-                stove not turning on, or the stove not cooking evenly. We
-                provide a same-day service, so you can get your stove back up
-                and running in no time.
-              </p>
-            )}
-          </div>
-        );
-      },
-    },
-    {
       description: "Dishwasher Repair",
       title: "We provide 4",
-      src: "/dishwasher-repair.webp",
+      src: "/dishwasher.jpg",
       ctaText: "Hire Us",
       ctaLink: `tel:${phoneNumber}`,
       content: () => {
@@ -137,7 +101,7 @@ export function ServicesSection({ company = "UAE Appliances Care" }) {
     {
       description: "Refridgerator Repair",
       title: "We provide 5",
-      src: "/fridge-repair.webp",
+      src: "/refr.jpg",
       ctaText: "Hire Us",
       ctaLink: `tel:${phoneNumber}`,
       content: () => {
@@ -148,6 +112,25 @@ export function ServicesSection({ company = "UAE Appliances Care" }) {
               the refrigerator making strange noises, or the refrigerator not
               dispensing water. We provide a same-day service, so you can get
               your refrigerator back up and running in no time.
+            </p>
+          </div>
+        );
+      },
+    },
+    {
+      description: "Gas Oven Repair",
+      title: "We provide 6",
+      src: "/oven.jpg",
+      ctaText: "Hire Us",
+      ctaLink: `tel:${phoneNumber}`,
+      content: () => {
+        return (
+          <div className="flex flex-col gap-4 overflow-auto">
+            <p>
+              Issues with gas ovens include the oven not heating, the oven not
+              turning on, or the oven not cooking evenly. We provide a same-day
+              service, so you can get your gas oven back up and running in no
+              time.
             </p>
           </div>
         );

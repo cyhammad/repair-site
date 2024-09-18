@@ -15,9 +15,13 @@ export default function Home() {
       <LgHeader />
       <SliderBanner company="Lg" />
       <CompaniesStrip company="Lg" />
-      <OurFeatures company="Lg" />
       <AboutSection company="Lg" />
+      <div className="flex items-center flex-col gap-10 py-20 max-w-screen overflow-hidden justify-center w-full">
+        <h1 className="text-5xl font-black">Reviews</h1>
+        <ReviewSection company="Lg" />
+      </div>
       <ServicesDetails company="Lg" />
+      <OurFeatures company="Lg" />
       <OneCallSection company="Lg" />
       <div
         className="flex items-center flex-col gap-10 py-20 justify-center w-full"
@@ -25,10 +29,6 @@ export default function Home() {
       >
         <h1 className="text-5xl font-black">Our Services</h1>
         <ServicesSection company="Lg" />
-      </div>
-      <div className="flex items-center flex-col gap-10 py-20 max-w-screen overflow-hidden justify-center w-full">
-        <h1 className="text-5xl font-black">Reviews</h1>
-        <ReviewSection company="Lg" />
       </div>
       <Footer company="Lg" />
     </>

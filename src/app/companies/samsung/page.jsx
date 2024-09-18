@@ -17,9 +17,13 @@ export default function Home() {
       <SamsungHeader />
       <SliderBanner company="Samsung" />
       <CompaniesStrip company="Samsung" />
-      <OurFeatures company="Samsung" />
       <AboutSection company="Samsung" />
+      <div className="flex items-center flex-col gap-10 py-20 max-w-screen overflow-hidden justify-center w-full">
+        <h1 className="text-5xl font-black">Reviews</h1>
+        <ReviewSection company="Samsung" />
+      </div>
       <ServicesDetails company="Samsung" />
+      <OurFeatures company="Samsung" />
       <OneCallSection company="Samsung" />
       <div
         className="flex items-center flex-col gap-10 py-20 justify-center w-full"
@@ -27,10 +31,6 @@ export default function Home() {
       >
         <h1 className="text-5xl font-black">Our Services</h1>
         <ServicesSection company="Samsung" />
-      </div>
-      <div className="flex items-center flex-col gap-10 py-20 max-w-screen overflow-hidden justify-center w-full">
-        <h1 className="text-5xl font-black">Reviews</h1>
-        <ReviewSection company="Samsung" />
       </div>
       <Footer company="Samsung" />
     </>

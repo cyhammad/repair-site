@@ -15,9 +15,8 @@ export default function Home() {
       <Header />
       <SliderBanner />
       <CompaniesStrip />
-      <OurFeatures />
       <AboutSection />
-      <OneCallSection />
+      <OurFeatures />
       <div
         className="flex items-center flex-col gap-10 py-20 justify-center w-full"
         id="services"
@@ -25,6 +24,7 @@ export default function Home() {
         <h1 className="text-5xl font-black">Our Services</h1>
         <ServicesSection />
       </div>
+      <OneCallSection />
       <div className="flex items-center flex-col gap-10 py-20 max-w-screen overflow-hidden justify-center w-full">
         <h1 className="text-5xl font-black">Reviews</h1>
         <ReviewSection />

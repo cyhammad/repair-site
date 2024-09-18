@@ -16,9 +16,13 @@ export default function Home() {
       <SiemensHeader />
       <SliderBanner company="Siemens" />
       <CompaniesStrip company="Siemens" />
-      <OurFeatures company="Siemens" />
       <AboutSection company="Siemens" />
+      <div className="flex items-center flex-col gap-10 py-20 max-w-screen overflow-hidden justify-center w-full">
+        <h1 className="text-5xl font-black">Reviews</h1>
+        <ReviewSection company="Siemens" />
+      </div>
       <ServicesDetails company="Siemens" />
+      <OurFeatures company="Siemens" />
       <OneCallSection company="Siemens" />
       <div
         className="flex items-center flex-col gap-10 py-20 justify-center w-full"
@@ -26,10 +30,6 @@ export default function Home() {
       >
         <h1 className="text-5xl font-black">Our Services</h1>
         <ServicesSection company="Siemens" />
-      </div>
-      <div className="flex items-center flex-col gap-10 py-20 max-w-screen overflow-hidden justify-center w-full">
-        <h1 className="text-5xl font-black">Reviews</h1>
-        <ReviewSection company="Siemens" />
       </div>
       <Footer company="Siemens" />
     </>

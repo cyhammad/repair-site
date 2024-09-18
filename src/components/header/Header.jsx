@@ -5,6 +5,7 @@ import Navlink from "./Navlink";
 import HeaderDropdown from "./HeaderDropdown";
 import { phoneNumber } from "@/lib/phone";
 import { cn } from "@/lib/utils";
+import ServiceCenterDropdown from "./ServiceCenterDropdown";
 
 export default function Header() {
   return (
@@ -12,7 +13,7 @@ export default function Header() {
       <div className="flex flex-col w-full max-w-7xl px-5 md:pb-5">
         <div className="flex justify-between items-center py-5 md:py-0 md:items-end">
           <Link href="/" className="flex text-2xl items-center">
-            UAE Appliances Care
+            Appliances Care UAE
           </Link>
           <div className="flex md:hidden">
             <HeaderDropdown />
@@ -20,6 +21,7 @@ export default function Header() {
           <div className={cn("hidden md:flex gap-5 uppercase")}>
             <Navlink href="/" title="Home" />
             <Navlink href="/#about" title="About" />
+            <ServiceCenterDropdown />
             <Navlink href="/#services" title="Services" />
             <Navlink href="/#contact" title="Contact" />
           </div>

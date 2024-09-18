@@ -6,7 +6,7 @@ import { leftToRightVariants, rightToLeftVariants } from "@/lib/variants";
 import CallAndWhatsappButton from "./buttons/CallAndWhatsappButton";
 import { cn } from "@/lib/utils";
 
-export default function AboutSection({ company = "UAE Appliances Care" }) {
+export default function AboutSection({ company = "Appliances Care UAE" }) {
   return (
     <div
       className="flex items-center justify-center w-full relative max-w-screen overflow-hidden"
@@ -22,7 +22,7 @@ export default function AboutSection({ company = "UAE Appliances Care" }) {
         >
           <div className="relative w-[300px] h-[300px] sm:w-[500px] sm:h-[420px]">
             <BlobBG company={company} />
-            <BlobImage imgUrl="/about-repair.png" />
+            <BlobImage imgUrl="/about.jpg" />
             <div className="absolute right-0 top-[10px]">
               <Plus size={24} className="text-primary" />
             </div>
@@ -69,7 +69,7 @@ const BlobImage = ({ imgUrl }) => {
         borderRadius: "13% 87% 59% 41% / 19% 33% 67% 81%",
         background: `url(${imgUrl})`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "bottom",
         backgroundRepeat: "no-repeat",
       }}
     ></div>
