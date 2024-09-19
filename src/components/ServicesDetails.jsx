@@ -2,7 +2,9 @@ import Image from "next/image";
 import CallAndWhatsappButton from "./buttons/CallAndWhatsappButton";
 import { cn } from "@/lib/utils";
 
-export default function ServicesDetails({ company = "Appliance Repair Center UAE" }) {
+export default function ServicesDetails({
+  company = "Appliance Repair Center UAE",
+}) {
   return (
     <div className="w-full flex flex-col gap-10 items-center justify-center py-20">
       <div
@@ -63,7 +65,7 @@ export default function ServicesDetails({ company = "Appliance Repair Center UAE
             "Slow wash cycles",
             "Control panel issues",
           ]}
-          imgUrl={"/wash.jpg"}
+          imgUrl={"/washing.jpeg"}
         />
         <Service
           company={company}
@@ -91,7 +93,7 @@ export default function ServicesDetails({ company = "Appliance Repair Center UAE
             "Refrigerant leaks",
             "High energy consumption",
           ]}
-          imgUrl={"/refr.jpg"}
+          imgUrl={"/fridge.jpeg"}
         />
         <Service
           company={company}
@@ -119,7 +121,7 @@ export default function ServicesDetails({ company = "Appliance Repair Center UAE
             "Detergent residue on dishes",
             "Dishwasher not drying dishes",
           ]}
-          imgUrl={"/dishwasher.jpg"}
+          imgUrl={"/dishwasher.jpeg"}
         />
         <Service
           company={company}
@@ -148,7 +150,7 @@ export default function ServicesDetails({ company = "Appliance Repair Center UAE
             "Oven not self-cleaning",
             "Oven not turning off",
           ]}
-          imgUrl={"/oven.jpg"}
+          imgUrl={"/oven.jpeg"}
         />
         {/* Stove/Cooker if company is Bosch and Siemens else TV repair */}
 
@@ -178,7 +180,7 @@ export default function ServicesDetails({ company = "Appliance Repair Center UAE
               "Oven not self-cleaning",
               "Oven not turning off",
             ]}
-            imgUrl={"/cooker.jpg"}
+            imgUrl={"/stove.jpeg"}
           />
         ) : (
           <Service
@@ -208,7 +210,7 @@ export default function ServicesDetails({ company = "Appliance Repair Center UAE
               "TV displaying static",
               "TV displaying vertical lines",
             ]}
-            imgUrl={"/tele.jpg"}
+            imgUrl={"/tv.jpeg"}
           />
         )}
         {/* Dryer repair */}
@@ -239,7 +241,7 @@ export default function ServicesDetails({ company = "Appliance Repair Center UAE
             "Dryer not heating well",
             "Dryer not heating properly",
           ]}
-          imgUrl={"/dry.jpg"}
+          imgUrl={"/dryer.jpeg"}
         />
       </div>
     </div>

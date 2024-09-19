@@ -7,7 +7,7 @@ import CallAndWhatsappButton from "./buttons/CallAndWhatsappButton";
 import { cn } from "@/lib/utils";
 
 export function SliderBanner({ company = "Appliance Repair Center UAE" }) {
-  const images = ["/banner-1.jpg", "/banner-2.jpg", "/banner-3.jpg"];
+  const images = ["/banner-1.jpeg", "/banner-2.jpeg", "/banner-3.jpeg"];
   return (
     <ImagesSlider
       className={cn("h-[40rem]", company === "Siemens" ? "mt-0" : "mt-[60px]")}

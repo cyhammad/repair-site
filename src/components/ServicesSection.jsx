@@ -13,7 +13,7 @@ export function ServicesSection({ company = "Appliance Repair Center UAE" }) {
     {
       description: "Washing Machine Repair",
       title: "We provide 1",
-      src: "/wash.jpg",
+      src: "/washing.jpeg",
       ctaText: "Hire Us",
       ctaLink: `tel:${phoneNumber}`,
       content: () => {
@@ -32,7 +32,7 @@ export function ServicesSection({ company = "Appliance Repair Center UAE" }) {
     {
       description: "Dryer Repair",
       title: "We provide 2",
-      src: "/dry.jpg",
+      src: "/dryer.jpeg",
       ctaText: "Hire Us",
       ctaLink: `tel:${phoneNumber}`,
       content: () => {
@@ -54,7 +54,7 @@ export function ServicesSection({ company = "Appliance Repair Center UAE" }) {
           : "Stove / Cooker Repair",
       title: "We provide 3",
       src:
-        company === "Lg" || company === "Samsung" ? "/tele.jpg" : "/cooker.jpg",
+        company === "Lg" || company === "Samsung" ? "/tv.jpeg" : "/stove.jpeg",
       ctaText: "Hire Us",
       ctaLink: `tel:${phoneNumber}`,
       content: () => {
@@ -82,7 +82,7 @@ export function ServicesSection({ company = "Appliance Repair Center UAE" }) {
     {
       description: "Dishwasher Repair",
       title: "We provide 4",
-      src: "/dishwasher.jpg",
+      src: "/dishwasher.jpeg",
       ctaText: "Hire Us",
       ctaLink: `tel:${phoneNumber}`,
       content: () => {
@@ -101,7 +101,7 @@ export function ServicesSection({ company = "Appliance Repair Center UAE" }) {
     {
       description: "Refridgerator Repair",
       title: "We provide 5",
-      src: "/refr.jpg",
+      src: "/fridge.jpeg",
       ctaText: "Hire Us",
       ctaLink: `tel:${phoneNumber}`,
       content: () => {
@@ -120,7 +120,7 @@ export function ServicesSection({ company = "Appliance Repair Center UAE" }) {
     {
       description: "Gas Oven Repair",
       title: "We provide 6",
-      src: "/oven.jpg",
+      src: "/oven.jpeg",
       ctaText: "Hire Us",
       ctaLink: `tel:${phoneNumber}`,
       content: () => {
