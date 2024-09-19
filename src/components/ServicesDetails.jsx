@@ -252,7 +252,7 @@ const Service = ({ title, desc, points, imgUrl, company }) => {
   return (
     <div className="flex flex-col items-center w-full border rounded-lg overflow-hidden border-black/10 gap-2">
       <div
-        className="w-full h-[200px]"
+        className="w-full h-[30rem]"
         style={{
           backgroundImage: `url(${imgUrl})`,
           backgroundSize: "cover",
