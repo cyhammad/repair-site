@@ -54,13 +54,13 @@ export function ServicesSection({ company = "Appliances Care UAE" }) {
           : "Stove / Cooker Repair",
       title: "We provide 3",
       src:
-        company === "LG" || company === "Samsung" ? "/tele.jpg" : "/cooker.jpg",
+        company === "Lg" || company === "Samsung" ? "/tele.jpg" : "/cooker.jpg",
       ctaText: "Hire Us",
       ctaLink: `tel:${phoneNumber}`,
       content: () => {
         return (
           <div className="flex flex-col gap-4">
-            {company === "LG" || company === "Samsung" ? (
+            {company === "Lg" || company === "Samsung" ? (
               <p>
                 Problems with televisions include the television not turning on,
                 the television not displaying an image, or the television not
