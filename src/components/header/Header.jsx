@@ -12,8 +12,8 @@ export default function Header() {
     <header className="flex flex-col items-center justify-center bg-white max-w-screen overflow-hidden fixed w-full z-50">
       <div className="flex flex-col w-full max-w-7xl px-5 md:pb-5">
         <div className="flex justify-between items-center py-5 md:py-0 md:items-end">
-          <Link href="/" className="flex text-2xl items-center">
-            Appliances Care UAE
+          <Link href="/" className="flex text-lg lg:text-2xl items-center">
+            Appliance Repair Center UAE
           </Link>
           <div className="flex md:hidden">
             <HeaderDropdown />

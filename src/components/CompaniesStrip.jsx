@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 
-export default function CompaniesStrip({ company = "Appliances Care UAE" }) {
+export default function CompaniesStrip({ company = "Appliance Repair Center UAE" }) {
   return (
     <div
       className={cn(

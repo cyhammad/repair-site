@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import CallAndWhatsappButton from "./buttons/CallAndWhatsappButton";
 import { cn } from "@/lib/utils";
 
-export default function OneCallSection({ company = "Appliances Care UAE" }) {
+export default function OneCallSection({ company = "Appliance Repair Center UAE" }) {
   return (
     <div
       className="flex items-center justify-center w-full flex-col px-5 max-w-screen overflow-hidden"
