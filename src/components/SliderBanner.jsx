@@ -32,7 +32,7 @@ export function SliderBanner({ company = "Appliance Repair Center UAE" }) {
           Experts
         </motion.p>
         <motion.p className="max-w-7xl mb-5 px-5 md:text-lg text-white text-center">
-          At our {company} Repair Center, our expert technicians are dedicated
+          At our Appliance Repair Center UAE Repair Center, our expert technicians are dedicated
           to restoring your {company} appliances to optimal performance,
           ensuring unmatched comfort and convenience. Whether addressing minor
           issues or managing significant breakdowns, we offer unparalleled
