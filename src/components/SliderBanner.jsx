@@ -28,7 +28,7 @@ export function SliderBanner({ company = "Appliance Repair Center UAE" }) {
         className="z-50 flex flex-col justify-center items-center"
       >
         <motion.p className="font-bold text-3xl md:text-5xl px-5 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-          Welcome to Appliance Repair Center UAE Repairs - Your Trusted Home Appliance Repair
+          Welcome to Appliance Repair Center UAE  - Your Trusted Home Appliance Repair
           Experts
         </motion.p>
         <motion.p className="max-w-7xl mb-5 px-5 md:text-lg text-white text-center">
