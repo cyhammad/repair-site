@@ -28,16 +28,16 @@ export function SliderBanner({ company = "Appliance Repair Center UAE" }) {
         className="z-50 flex flex-col justify-center items-center"
       >
         <motion.p className="font-bold text-3xl md:text-5xl px-5 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-          Welcome to {company} Repairs - Your Trusted Home Appliance Repair
+          Welcome to Appliance Repair Center UAE Repairs - Your Trusted Home Appliance Repair
           Experts
         </motion.p>
         <motion.p className="max-w-7xl mb-5 px-5 md:text-lg text-white text-center">
-          At our Appliance Repair Center UAE Repair Center, our expert technicians are dedicated
-          to restoring your {company} appliances to optimal performance,
+          At our Appliance Repair Center UAE , our expert technicians are dedicated
+          to restoring your appliances to optimal performance,
           ensuring unmatched comfort and convenience. Whether addressing minor
           issues or managing significant breakdowns, we offer unparalleled
           service to keep your household running seamlessly. Trust us for
-          premium {company} appliance repair that guarantees efficiency and
+          premium appliance repair that guarantees efficiency and
           reliability.
         </motion.p>
         <CallAndWhatsappButton company={company} banner />
