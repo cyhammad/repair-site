@@ -8,7 +8,7 @@ import CallAndWhatsappButton from "./buttons/CallAndWhatsappButton";
 import { cn } from "@/lib/utils";
 import { phoneNumber } from "@/lib/phone";
 
-export function ServicesSection({ company = "Appliance Repair Center UAE" }) {
+export function ServicesSection({ company = "Appliance Services UAE" }) {
   const cards = [
     {
       description: "Washing Machine Repair",

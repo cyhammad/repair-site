@@ -6,7 +6,7 @@ import { ImagesSlider } from "./ImagesSlider";
 import CallAndWhatsappButton from "./buttons/CallAndWhatsappButton";
 import { cn } from "@/lib/utils";
 
-export function SliderBanner({ company = "Appliance Repair Center UAE" }) {
+export function SliderBanner({ company = "Appliance Services UAE" }) {
   const images = ["/banner-1.jpeg", "/banner-2.jpeg", "/banner-3.jpeg"];
   return (
     <ImagesSlider

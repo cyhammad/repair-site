@@ -11,9 +11,9 @@ const font = Lato({
 });
 
 export const metadata = {
-  title: "Appliance Repair Center UAE",
+  title: "Appliance Services UAE",
   description:
-    "Appliance Repair Center UAE is a site for repairing appliances.",
+    "Appliance Services UAE is a site for repairing appliances.",
 };
 
 export default function RootLayout({ children }) {

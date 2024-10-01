@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-export default function Footer({ company = "Appliance Repair Center UAE" }) {
+export default function Footer({ company = "Appliance Services UAE" }) {
   return (
     <footer className="w-full relative flex flex-col">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -39,7 +39,7 @@ export default function Footer({ company = "Appliance Repair Center UAE" }) {
       >
         <div className="grid w-full max-w-6xl px-5 pt-10 pb-20 gap-8 sm:grid-cols-[1fr_0.5fr_0.5fr]">
           <div className="flex flex-col max-w-[75%] gap-5">
-            <h1 className="text-4xl">Appliance Repair Center UAE</h1>
+            <h1 className="text-4xl">Appliance Services UAE</h1>
             <span className="text-white/90">
               At Fast Repairs, we specialize in repairing a wide range of home
               appliances, ensuring they run smoothly and efficiently. Our team
@@ -109,7 +109,7 @@ export default function Footer({ company = "Appliance Repair Center UAE" }) {
           </div>
         </div>
         <div className="border-t border-white/10 py-5 w-full text-center px-5 flex items-center justify-center">
-          &copy; 2024 Appliance Repair Center UAE. All rights reserved.
+          &copy; 2024 Appliance Services UAE. All rights reserved.
         </div>
       </div>
     </footer>
